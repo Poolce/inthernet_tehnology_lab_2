@@ -1,0 +1,34 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+            Введите дату
+            <input type="date" onchange="get_busy_time(this.value)" id='date'> 
+            <br>
+            <br>
+            Выберите процедуру
+            <select id="selectvalue" onchange="get_current_duration(this.value)">           
+            </select>
+            <br>
+            <hr>
+            <p id = 'time'>Выберете время: </p>
+            <table id = "time_table">
+            </table>
+            <p id = 'curr_time'></p>
+            <hr>
+            <input type="label" id='name' value="Введите имя" onclick="this.value = ''">
+            <input type="button" value="Записаться" onclick="send_result()">
+        </form>
+        <hr>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src='script.js'> </script>
+    <script type="text/javascript" src='functions.js'> </script>
+    <script type="text/javascript" src='page_build.js'> </script>
+    </body>
+    </html>
